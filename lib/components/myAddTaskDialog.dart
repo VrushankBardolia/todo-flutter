@@ -14,9 +14,15 @@ class MyAddTaskDialog extends StatelessWidget {
       title: const Text('Add Task'),
       content: TextField(
         decoration: InputDecoration(
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-          focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-          hintText: 'Add Task',
+          border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide(color: Theme.of(context).colorScheme.primary)
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide(color: Theme.of(context).colorScheme.primary)
+          ),
+          hintText: 'Task',
         ),
         onChanged: (value){
           newTask.text = value;

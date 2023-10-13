@@ -9,7 +9,7 @@ class MyDeleteDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       title: Text('Delete Task?'),
-      content: Text('This task  will be deleted permanently'),
+      content: Text('This task will be deleted permanently'),
       actions: [
         TextButton(
           onPressed: (){Navigator.pop(context);},
